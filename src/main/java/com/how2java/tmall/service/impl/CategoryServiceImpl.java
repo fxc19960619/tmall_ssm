@@ -15,13 +15,6 @@ public class CategoryServiceImpl implements CategoryService {
     CategoryMapper categoryMapper;
 
     @Override
-    public List<Category> list() {
-        CategoryExample example =new CategoryExample();
-        example.setOrderByClause("id desc");
-        return categoryMapper.selectByExample(example);
-    }
-
-    @Override
     public void add(Category category) {
         categoryMapper.insert(category);
     }
@@ -39,5 +32,12 @@ public class CategoryServiceImpl implements CategoryService {
     @Override
     public void update(Category category) {
         categoryMapper.updateByPrimaryKeySelective(category);
+    }
+
+    @Override
+    public List<Category> list() {
+        CategoryExample example =new CategoryExample();
+        example.setOrderByClause("id desc");
+        return categoryMapper.selectByExample(example);
     }
 }
