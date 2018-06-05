@@ -31,7 +31,7 @@ public class ProductController {
         return "redirect:admin_product_list?cid="+p.getCid();
     }
 
-    @RequestMapping("admin_product_edit")
+    @RequestMapping("admin_product_delete")
     public String delete(int id){
        Product p=productService.get(id);
        productService.delete(id);
@@ -61,7 +61,6 @@ public class ProductController {
         List<Product> ps = productService.list(cid);
 
         int total = (int) new PageInfo<>(ps).getTotal();
-
         page.setTotal(total);
         page.setParam("&cid="+c.getId());
 

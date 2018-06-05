@@ -5,7 +5,7 @@
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />
     <result column="subTitle" jdbcType="VARCHAR" property="subTitle" />
-    <result column="orignalPrice" jdbcType="REAL" property="orignalPrice" />
+    <result column="originalPrice" jdbcType="REAL" property="originalPrice" />
     <result column="promotePrice" jdbcType="REAL" property="promotePrice" />
     <result column="stock" jdbcType="INTEGER" property="stock" />
     <result column="cid" jdbcType="INTEGER" property="cid" />
@@ -41,7 +41,7 @@
     </where>
   </sql>
   <sql id="Base_Column_List">
-    id, name, subTitle, orignalPrice, promotePrice, stock, cid, createDate
+    id, name, subTitle, originalPrice, promotePrice, stock, cid, createDate
   </sql>
   <select id="selectByExample" parameterType="com.how2java.tmall.pojo.ProductExample" resultMap="BaseResultMap">
     select
@@ -69,10 +69,10 @@
     where id = #{id,jdbcType=INTEGER}
   </delete>
   <insert id="insert" keyColumn="id" keyProperty="id" parameterType="com.how2java.tmall.pojo.Product" useGeneratedKeys="true">
-    insert into product (name, subTitle, orignalPrice, 
+    insert into product (name, subTitle, originalPrice, 
       promotePrice, stock, cid, 
       createDate)
-    values (#{name,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR}, #{orignalPrice,jdbcType=REAL}, 
+    values (#{name,jdbcType=VARCHAR}, #{subTitle,jdbcType=VARCHAR}, #{originalPrice,jdbcType=REAL}, 
       #{promotePrice,jdbcType=REAL}, #{stock,jdbcType=INTEGER}, #{cid,jdbcType=INTEGER}, 
       #{createDate,jdbcType=TIMESTAMP})
   </insert>
@@ -85,8 +85,8 @@
       <if test="subTitle != null">
         subTitle,
       </if>
-      <if test="orignalPrice != null">
-        orignalPrice,
+      <if test="originalPrice != null">
+        originalPrice,
       </if>
       <if test="promotePrice != null">
         promotePrice,
@@ -108,8 +108,8 @@
       <if test="subTitle != null">
         #{subTitle,jdbcType=VARCHAR},
       </if>
-      <if test="orignalPrice != null">
-        #{orignalPrice,jdbcType=REAL},
+      <if test="originalPrice != null">
+        #{originalPrice,jdbcType=REAL},
       </if>
       <if test="promotePrice != null">
         #{promotePrice,jdbcType=REAL},
@@ -134,8 +134,8 @@
       <if test="subTitle != null">
         subTitle = #{subTitle,jdbcType=VARCHAR},
       </if>
-      <if test="orignalPrice != null">
-        orignalPrice = #{orignalPrice,jdbcType=REAL},
+      <if test="originalPrice != null">
+        originalPrice = #{originalPrice,jdbcType=REAL},
       </if>
       <if test="promotePrice != null">
         promotePrice = #{promotePrice,jdbcType=REAL},
@@ -156,7 +156,7 @@
     update product
     set name = #{name,jdbcType=VARCHAR},
       subTitle = #{subTitle,jdbcType=VARCHAR},
-      orignalPrice = #{orignalPrice,jdbcType=REAL},
+      originalPrice = #{originalPrice,jdbcType=REAL},
       promotePrice = #{promotePrice,jdbcType=REAL},
       stock = #{stock,jdbcType=INTEGER},
       cid = #{cid,jdbcType=INTEGER},

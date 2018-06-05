@@ -305,63 +305,63 @@ public class ProductExample {
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceIsNull() {
-            addCriterion("orignalPrice is null");
+        public Criteria andOriginalPriceIsNull() {
+            addCriterion("originalPrice is null");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceIsNotNull() {
-            addCriterion("orignalPrice is not null");
+        public Criteria andOriginalPriceIsNotNull() {
+            addCriterion("originalPrice is not null");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceEqualTo(Float value) {
-            addCriterion("orignalPrice =", value, "orignalPrice");
+        public Criteria andOriginalPriceEqualTo(Float value) {
+            addCriterion("originalPrice =", value, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceNotEqualTo(Float value) {
-            addCriterion("orignalPrice <>", value, "orignalPrice");
+        public Criteria andOriginalPriceNotEqualTo(Float value) {
+            addCriterion("originalPrice <>", value, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceGreaterThan(Float value) {
-            addCriterion("orignalPrice >", value, "orignalPrice");
+        public Criteria andOriginalPriceGreaterThan(Float value) {
+            addCriterion("originalPrice >", value, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceGreaterThanOrEqualTo(Float value) {
-            addCriterion("orignalPrice >=", value, "orignalPrice");
+        public Criteria andOriginalPriceGreaterThanOrEqualTo(Float value) {
+            addCriterion("originalPrice >=", value, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceLessThan(Float value) {
-            addCriterion("orignalPrice <", value, "orignalPrice");
+        public Criteria andOriginalPriceLessThan(Float value) {
+            addCriterion("originalPrice <", value, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceLessThanOrEqualTo(Float value) {
-            addCriterion("orignalPrice <=", value, "orignalPrice");
+        public Criteria andOriginalPriceLessThanOrEqualTo(Float value) {
+            addCriterion("originalPrice <=", value, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceIn(List<Float> values) {
-            addCriterion("orignalPrice in", values, "orignalPrice");
+        public Criteria andOriginalPriceIn(List<Float> values) {
+            addCriterion("originalPrice in", values, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceNotIn(List<Float> values) {
-            addCriterion("orignalPrice not in", values, "orignalPrice");
+        public Criteria andOriginalPriceNotIn(List<Float> values) {
+            addCriterion("originalPrice not in", values, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceBetween(Float value1, Float value2) {
-            addCriterion("orignalPrice between", value1, value2, "orignalPrice");
+        public Criteria andOriginalPriceBetween(Float value1, Float value2) {
+            addCriterion("originalPrice between", value1, value2, "originalPrice");
             return (Criteria) this;
         }
 
-        public Criteria andOrignalPriceNotBetween(Float value1, Float value2) {
-            addCriterion("orignalPrice not between", value1, value2, "orignalPrice");
+        public Criteria andOriginalPriceNotBetween(Float value1, Float value2) {
+            addCriterion("originalPrice not between", value1, value2, "originalPrice");
             return (Criteria) this;
         }
 

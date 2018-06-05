@@ -9,7 +9,7 @@ public class Product {
 
     private String subTitle;
 
-    private Float orignalPrice;
+    private Float originalPrice;
 
     private Float promotePrice;
 
@@ -19,11 +19,13 @@ public class Product {
 
     private Date createDate;
 
-    //*非数据库字段*/
-    private  Category category;
+    /*非数据库字段*/
+    private Category  category;
+
     public Category getCategory() {
         return category;
     }
+
     public void setCategory(Category category) {
         this.category = category;
     }
@@ -52,12 +54,12 @@ public class Product {
         this.subTitle = subTitle == null ? null : subTitle.trim();
     }
 
-    public Float getOrignalPrice() {
-        return orignalPrice;
+    public Float getOriginalPrice() {
+        return originalPrice;
     }
 
-    public void setOrignalPrice(Float orignalPrice) {
-        this.orignalPrice = orignalPrice;
+    public void setOriginalPrice(Float originalPrice) {
+        this.originalPrice = originalPrice;
     }
 
     public Float getPromotePrice() {
