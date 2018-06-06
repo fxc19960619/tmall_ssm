@@ -3,6 +3,7 @@ package com.how2java.tmall.controller;
 import java.util.Date;
 import java.util.List;
 
+import com.how2java.tmall.service.impl.ProductServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;

@@ -15,7 +15,7 @@ import com.how2java.tmall.service.PropertyService;
 import com.how2java.tmall.util.Page;
 @Controller
 @RequestMapping("")
-public class PrepertyController {
+public class PropertyController {
     @Autowired
     CategoryService categoryService;
     @Autowired

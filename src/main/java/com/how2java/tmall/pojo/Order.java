@@ -1,6 +1,7 @@
 package com.how2java.tmall.pojo;
 
 import java.util.Date;
+import java.util.List;
 
 public class Order {
     private Integer id;
@@ -28,6 +29,14 @@ public class Order {
     private Integer uid;
 
     private String status;
+    /*如下是非数据库字段*/
+    private List<OrderItem> orderItems;
+
+    private User user;
+
+    private float total;
+
+    private int totalNumber;
 
     public Integer getId() {
         return id;
