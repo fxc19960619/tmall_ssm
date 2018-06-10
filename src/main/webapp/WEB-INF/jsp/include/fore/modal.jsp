@@ -42,7 +42,7 @@
                     <button class="btn btn-block redButton loginSubmitButton" type="submit">登录</button>
                 </div>
             </div>
-        </div>
+        </div>`
     </div>
 </div>
 

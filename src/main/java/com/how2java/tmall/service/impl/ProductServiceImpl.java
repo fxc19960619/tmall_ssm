@@ -44,6 +44,7 @@ public class ProductServiceImpl implements ProductService {
     public Product get(int id) {
         Product p=productMapper.selectByPrimaryKey(id);
         setCategory(p);
+        setFirstProductImage(p);
         return p;
     }
 
